@@ -1,0 +1,10 @@
+{
+  "model_name": "lightgbm",
+  "rmse_lakhs": 1.7598549627460558,
+  "mae_lakhs": 1.3434683075277676,
+  "r2_score": 0.9999250497388312,
+  "mape_percent": 0.6272377425893212,
+  "max_error_lakhs": 12.429222132364657,
+  "latency_ms_per_sample": 0.004050707817077636,
+  "total_eval_time_sec": 0.20253539085388184
+}

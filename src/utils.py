@@ -2,7 +2,12 @@
 """
 Utility functions for file paths, logging, and common helpers.
 """
+import os
 from pathlib import Path
+from dotenv import load_dotenv
+
+# Load environment variables from .env if present
+load_dotenv()
 
 # Project root path
 ROOT_DIR = Path(__file__).resolve().parent.parent
@@ -23,4 +28,5 @@ MODELS_CLF_DIR = MODELS_DIR / "classification"
 MODELS_REG_DIR = MODELS_DIR / "regression"
 MLRUNS_DIR = ROOT_DIR / "mlruns"
 MLFLOW_DB_PATH = ROOT_DIR / "mlflow.db"
-MLFLOW_TRACKING_URI = f"sqlite:///{MLFLOW_DB_PATH.as_posix()}"
+LOCAL_MLFLOW_TRACKING_URI = f"sqlite:///{MLFLOW_DB_PATH.as_posix()}"
+MLFLOW_TRACKING_URI = os.getenv("MLFLOW_TRACKING_URI", LOCAL_MLFLOW_TRACKING_URI)

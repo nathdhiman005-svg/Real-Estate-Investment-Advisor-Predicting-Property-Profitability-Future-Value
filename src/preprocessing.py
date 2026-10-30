@@ -16,7 +16,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from sklearn.model_selection import train_test_split
 
-from src.utils import DATA_PROCESSED_PATH, DATA_RAW_PATH
+from src.utils import DATA_PROCESSED_PATH
 
 # -----------------------------------------------------------------------------
 # Feature Column Definitions

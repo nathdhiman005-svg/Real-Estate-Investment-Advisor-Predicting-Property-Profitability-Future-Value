@@ -1,0 +1,10 @@
+{
+  "model_name": "random_forest",
+  "rmse_lakhs": 2.835102010967979,
+  "mae_lakhs": 1.525513190458137,
+  "r2_score": 0.9998054833523664,
+  "mape_percent": 0.5911787159735395,
+  "max_error_lakhs": 35.51453752057091,
+  "latency_ms_per_sample": 0.003973426818847656,
+  "total_eval_time_sec": 0.1986713409423828
+}

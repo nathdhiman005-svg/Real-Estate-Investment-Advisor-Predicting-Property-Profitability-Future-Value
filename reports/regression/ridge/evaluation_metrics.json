@@ -1,0 +1,10 @@
+{
+  "model_name": "ridge",
+  "rmse_lakhs": 6.554312766294264,
+  "mae_lakhs": 4.328779289393149,
+  "r2_score": 0.998960382169408,
+  "mape_percent": 3.2799974277410446,
+  "max_error_lakhs": 39.34912601284134,
+  "latency_ms_per_sample": 0.0033384704589843753,
+  "total_eval_time_sec": 0.16692352294921875
+}

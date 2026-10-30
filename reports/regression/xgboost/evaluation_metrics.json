@@ -1,0 +1,10 @@
+{
+  "model_name": "xgboost",
+  "rmse_lakhs": 2.018513538069223,
+  "mae_lakhs": 1.5309222084503176,
+  "r2_score": 0.9999013986799515,
+  "mape_percent": 0.6400098279193515,
+  "max_error_lakhs": 14.573664550781245,
+  "latency_ms_per_sample": 0.003623971939086914,
+  "total_eval_time_sec": 0.1811985969543457
+}

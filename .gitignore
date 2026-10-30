@@ -23,6 +23,8 @@ data/processed/*.csv
 venv/
 env/
 ENV/
+.env
+*.env
 __pycache__/
 *.py[cod]
 *$py.class
@@ -35,6 +37,8 @@ __pycache__/
 mlruns/
 mlartifacts/
 models/
+
+
 *.joblib
 *.pkl
 mlflow.db
