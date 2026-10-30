@@ -1,0 +1,46 @@
+# ==========================================
+# User-Specified Ignored File Types
+# ==========================================
+# Word / Document files
+*.doc
+*.docx
+
+# Markdown documentation files
+*.md
+
+# Text files
+*.txt
+
+# Data files (CSV)
+*.csv
+data/raw/*.csv
+data/processed/*.csv
+
+# ==========================================
+# Python & Environment
+# ==========================================
+.venv/
+venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+
+# ==========================================
+# Jupyter Notebooks & MLflow
+# ==========================================
+.ipynb_checkpoints/
+mlruns/
+mlartifacts/
+
+# ==========================================
+# IDE & System Files
+# ==========================================
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+.DS_Store
+
