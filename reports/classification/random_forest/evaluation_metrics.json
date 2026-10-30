@@ -1,0 +1,17 @@
+{
+  "model_name": "random_forest",
+  "accuracy": 0.99042,
+  "precision": 0.989429006166413,
+  "recall": 0.9913741223671013,
+  "f1_score": 0.9904006092306459,
+  "roc_auc": 0.9994511310601795,
+  "average_precision": 0.9994668386469977,
+  "confusion_matrix": {
+    "tn": 24811,
+    "fp": 264,
+    "fn": 215,
+    "tp": 24710
+  },
+  "latency_ms_per_sample": 0.007148547172546387,
+  "total_eval_time_sec": 0.35742735862731934
+}

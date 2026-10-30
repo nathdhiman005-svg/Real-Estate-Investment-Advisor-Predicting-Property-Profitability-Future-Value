@@ -1,0 +1,17 @@
+{
+  "model_name": "lightgbm",
+  "accuracy": 0.99228,
+  "precision": 0.9928895673482505,
+  "recall": 0.9916148445336008,
+  "f1_score": 0.9922517965394034,
+  "roc_auc": 0.9996242094178847,
+  "average_precision": 0.9996270246542717,
+  "confusion_matrix": {
+    "tn": 24898,
+    "fp": 177,
+    "fn": 209,
+    "tp": 24716
+  },
+  "latency_ms_per_sample": 0.007903413772583008,
+  "total_eval_time_sec": 0.3951706886291504
+}

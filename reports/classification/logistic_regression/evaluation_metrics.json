@@ -1,0 +1,17 @@
+{
+  "model_name": "logistic_regression",
+  "accuracy": 0.99034,
+  "precision": 0.9891139037861202,
+  "recall": 0.9915346038114343,
+  "f1_score": 0.9903227745386789,
+  "roc_auc": 0.99801948777539,
+  "average_precision": 0.9972423317913269,
+  "confusion_matrix": {
+    "tn": 24803,
+    "fp": 272,
+    "fn": 211,
+    "tp": 24714
+  },
+  "latency_ms_per_sample": 0.005485577583312988,
+  "total_eval_time_sec": 0.2742788791656494
+}

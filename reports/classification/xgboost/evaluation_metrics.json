@@ -1,0 +1,17 @@
+{
+  "model_name": "xgboost",
+  "accuracy": 0.99238,
+  "precision": 0.9929701936209528,
+  "recall": 0.9917352056168506,
+  "f1_score": 0.9923523153816817,
+  "roc_auc": 0.999622299000691,
+  "average_precision": 0.9996258391287817,
+  "confusion_matrix": {
+    "tn": 24900,
+    "fp": 175,
+    "fn": 206,
+    "tp": 24719
+  },
+  "latency_ms_per_sample": 0.007796082496643066,
+  "total_eval_time_sec": 0.3898041248321533
+}

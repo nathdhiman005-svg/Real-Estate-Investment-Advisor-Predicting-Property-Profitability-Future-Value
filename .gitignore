@@ -29,11 +29,16 @@ __pycache__/
 *.pyd
 
 # ==========================================
-# Jupyter Notebooks & MLflow
+# Jupyter Notebooks & MLflow & Model Weights
 # ==========================================
 .ipynb_checkpoints/
 mlruns/
 mlartifacts/
+models/
+*.joblib
+*.pkl
+mlflow.db
+*.db
 
 # ==========================================
 # IDE & System Files

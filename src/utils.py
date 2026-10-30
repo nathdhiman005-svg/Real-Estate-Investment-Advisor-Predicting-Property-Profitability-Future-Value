@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """
 Utility functions for file paths, logging, and common helpers.
 """
@@ -9,6 +10,17 @@ ROOT_DIR = Path(__file__).resolve().parent.parent
 # Standard data paths
 DATA_RAW_PATH = ROOT_DIR / "data" / "raw" / "india_housing_prices.csv"
 DATA_PROCESSED_PATH = ROOT_DIR / "data" / "processed" / "cleaned_housing_prices.csv"
-REPORTS_EDA_DIR = ROOT_DIR / "reports" / "eda"
-MLRUNS_DIR = ROOT_DIR / "mlruns"
 
+# Reports and visualization paths
+REPORTS_DIR = ROOT_DIR / "reports"
+REPORTS_EDA_DIR = REPORTS_DIR / "eda"
+REPORTS_CLF_DIR = REPORTS_DIR / "classification"
+REPORTS_REG_DIR = REPORTS_DIR / "regression"
+
+# Models and MLflow paths
+MODELS_DIR = ROOT_DIR / "models"
+MODELS_CLF_DIR = MODELS_DIR / "classification"
+MODELS_REG_DIR = MODELS_DIR / "regression"
+MLRUNS_DIR = ROOT_DIR / "mlruns"
+MLFLOW_DB_PATH = ROOT_DIR / "mlflow.db"
+MLFLOW_TRACKING_URI = f"sqlite:///{MLFLOW_DB_PATH.as_posix()}"
