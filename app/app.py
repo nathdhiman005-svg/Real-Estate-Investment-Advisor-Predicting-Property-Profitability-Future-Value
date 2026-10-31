@@ -21,13 +21,25 @@ reconfig = getattr(sys.stdout, "reconfigure", None)
 if callable(reconfig):
     reconfig(encoding="utf-8")
 
-from dotenv import load_dotenv
-load_dotenv()
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass
 
 import numpy as np
 import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
+
+# Automatically bridge Streamlit Cloud Secrets into environment variables for MLflow
+try:
+    if hasattr(st, "secrets"):
+        for sec_k, sec_v in st.secrets.items():
+            if isinstance(sec_v, str):
+                os.environ.setdefault(sec_k, sec_v)
+except Exception:
+    pass
 
 from src.mlflow_service import (
     predict_property_investment,

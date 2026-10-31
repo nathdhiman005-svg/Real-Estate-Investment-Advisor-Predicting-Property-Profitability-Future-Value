@@ -31,8 +31,11 @@ if callable(reconfig_err):
 os.environ["MLFLOW_DISABLE_AGENT_HINT"] = "1"
 os.environ["PYTHONIOENCODING"] = "utf-8"
 
-from dotenv import load_dotenv
-load_dotenv()
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass
 
 import joblib
 import numpy as np
